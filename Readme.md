@@ -41,5 +41,16 @@ podman run -it \
   --userns keep-id \
   -v ~/.getmail:/data/config:Z \
   -v ~/mail:/data/mail:Z \
-  getmail:focal
+  quay.io/ckoenig/getmail
+```
+
+Or with Docker (and without SELinux specific flags):
+
+```bash
+docker run -it \
+  --rm \
+  -u 1000 \
+  -v ~/.getmail:/data/config \
+  -v ~/mail:/data/mail \
+  quay.io/ckoenig/getmail
 ```
