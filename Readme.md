@@ -37,7 +37,7 @@ message_log = /data/mail/log
 podman run -it \
   --rm \
   --userns keep-id \
-  -v ~/.getmail:/mail/config:Z \
+  -v ~/.getmail:/data/config:Z \
   -v ~/mail:/data/mail:Z \
   getmail:focal
 ```
