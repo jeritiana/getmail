@@ -1,3 +1,5 @@
+[![Docker Repository on Quay](https://quay.io/repository/ckoenig/getmail/status "Docker Repository on Quay")](https://quay.io/repository/ckoenig/getmail)
+
 # Getmail Docker Container
 
 Since Fedora no longer ships with software that depends on Python 2.7 and `getmail` has not yet been updated to Python 3 this container can be used instead.
