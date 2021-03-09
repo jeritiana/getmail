@@ -58,7 +58,8 @@ docker run -it \
 
 `getmail` supports multiple accounts with multiple rc files by specifying each one with a `--rcfile $file` option. 
 You can do the same by setting the `RCFILE` environment variable in your run command.
-The files should be inside your mail directory. For example, if you have two rc files `getmailrc1` and `getmailrc2` (both inside `~/mail`),
+The files should be inside your config directory (usually `.getmail`). 
+For example, if you have two rc files `getmailrc1` and `getmailrc2` (both inside `~/.getmail`),
 use the following command:
 
 ```bash
