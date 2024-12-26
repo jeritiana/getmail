@@ -1,0 +1,17 @@
+[retriever]
+type = SimplePOP3SSLRetriever
+server = $MAILBOX_SERVER
+port = $MAILBOX_PORT
+username = $MAILBOX_USERNAME
+password = $MAILBOX_PASSWORD
+
+[destination]
+type = Mboxrd
+path = /data/mail/$MAILBOX_USERNAME.mbox
+user = getmail
+
+[options]
+read_all = true
+delete = false
+message_log = /data/mail/getmail.log
+
